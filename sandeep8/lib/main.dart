@@ -53,10 +53,10 @@ class _HomepageState extends State<Homepage> {
           children: <Widget>[
             new Text(mytext),
             new RaisedButton(
-              color: Colors.red,
+                color: Colors.red,
                 child: new Text("Click",style: new TextStyle(
-                  color: Colors.white,
-                  fontSize: 30
+                    color: Colors.white,
+                    fontSize: 30
                 ),),
                 onPressed: _changeText)
           ],
@@ -68,10 +68,10 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: new AppBar(
-          title: new Text("Stateful MainAxisAlignment "),
-        ),
-        body: _bodyWidget(),
+      appBar: new AppBar(
+        title: new Text("Stateful MainAxisAlignment "),
+      ),
+      body: _bodyWidget(),
     );
   }
 }
