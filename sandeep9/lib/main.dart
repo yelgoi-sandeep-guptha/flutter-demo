@@ -52,7 +52,7 @@ class _HomepageState extends State<Homepage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text(mytext),
-           
+
           ],
         ),
       ),
@@ -63,10 +63,12 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: new Text("Stateful MainAxisAlignment "),
+        title: new Text("Stateful FloatingActionButton "),
       ),
       body: _bodyWidget(),
-      floatingActionButton: new Icon(Icons.add),
+      floatingActionButton: new FloatingActionButton(
+          child:new Icon(Icons.add),
+          onPressed: _changeText)
     );
   }
 }
