@@ -13,9 +13,61 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatefulWidget with SingleTickerProviderStateMixin{
+  AnimationController _iconAnimationController;
+  Animation<double> _iconAnimation;
+
+  @override
+  void initState(){
+    super.initState();
+    _iconAnimation;
+
+  }
   @override
   _LoginPageState createState() => _LoginPageState();
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+
+  @override
+  // TODO: implement context
+  BuildContext get context => throw UnimplementedError();
+
+  @override
+  void deactivate() {
+    // TODO: implement deactivate
+  }
+
+  @override
+  void didUpdateWidget(StatefulWidget oldWidget) {
+    // TODO: implement didUpdateWidget
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+  }
+
+  @override
+  // TODO: implement mounted
+  bool get mounted => throw UnimplementedError();
+
+  @override
+  void reassemble() {
+    // TODO: implement reassemble
+  }
+
+  @override
+  void setState(fn) {
+    // TODO: implement setState
+  }
+
+  @override
+  // TODO: implement widget
+  StatefulWidget get widget => throw UnimplementedError();
 }
 
 class _LoginPageState extends State<LoginPage> {
