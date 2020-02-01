@@ -1,13 +1,18 @@
-import 'package:/flutter/materialapp.dart';
+import 'package:flutter/material.dart';
+import 'homepage.dart';
+
+
 void main() => runApp(new MyApp());
 
-class  MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
-  Widget bulid(BuildContext context){
-    return new MaterialApp{
-      title="Calculator App",
-      theme: new ThemeData(primarySwatch: Colors.red),
-      home: new 
-    }
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Calculator",
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: homepage(),
+    );
   }
 }
