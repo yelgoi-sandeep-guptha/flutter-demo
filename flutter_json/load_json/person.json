@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Yelgoi Sandeep Guptha",
+    "age": "22",
+    "height": "175",
+    "gender": "male",
+    "hair_color": "black"
+  },
+  {
+    "name": "Yelgoi Subhash Chandr",
+    "age": "45",
+    "height": "155",
+    "gender": "male",
+    "hair_color": "white"
+  },
+  {
+    "name": "Yelgoi Umarani",
+    "age": "60",
+    "height": "175",
+    "gender": "female",
+    "hair_color": "black"
+  },
+  {
+    "name": "Yelgoi Mallikarjun",
+    "age": "45",
+    "height": "189",
+    "gender": "male",
+    "hair_color": "brown"
+  }
+]

@@ -10,6 +10,8 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Basic Building App"),
+          backgroundColor: Colors.red[600],
+
         ),
         body: Container(
           child: Row(
