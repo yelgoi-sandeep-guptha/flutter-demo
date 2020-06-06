@@ -1,43 +1,26 @@
-import 'package:flutter/cupertino.dart';
-import "package:flutter/material.dart";
+import 'package:a/screens/first_screen.dart';
+import 'package:flutter/material.dart';
+void main() => runApp(MyApp());
 
-void main(){
-  runApp(
-    MaterialApp(
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Sandeep's Page",
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: Text(
-            "My First Page",
+              "Guptha's Page",
             textDirection: TextDirection.rtl,
-            textAlign: TextAlign.center,
             style: TextStyle(
-              backgroundColor: Colors.black,
-              color: Colors.white,
-              fontSize: 20,
-              decoration: TextDecoration.lineThrough,
-              decorationColor: Colors.red,
-              decorationThickness: 3,
-              wordSpacing: 5,
-              letterSpacing: 1,
-              fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.bold,
+              color: Colors.red,
             ),
           ),
         ),
-        body: Material(
-          child: Center(
-            child: Text(
-                " Yelgoi Sandeep Guptha\n Yelgoi Sandeep Guptha\n Yelgoi Sandeep Guptha\n Yelgoi Sandeep Guptha\n Yelgoi Sandeep Guptha\n Yelgoi Sandeep Guptha\n Yelgoi Sandeep Guptha",
-              maxLines: 2,
-              style: TextStyle(
-                  color: Colors.red,
-                  fontSize: 20,
-              ),
-            ),
-          ),
-        ),
+        body: FirstScreen()
       ),
-    )
-  );
+    );
+  }
 }
