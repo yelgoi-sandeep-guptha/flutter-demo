@@ -19,21 +19,13 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Raised(),
-              Container(
-                margin: EdgeInsets.all(50),
-                width: 250,
-                height: 100,
-
-                child: RaisedButton(
-                  elevation: 6.0,
-                  child: Text("Book"),
-                  color: Colors.blueGrey,
-                  onPressed: () => {
-                    //code
-                  },
-                  padding: EdgeInsets.all(30),
-                  textColor: Colors.red,
-                ),
+              RaisedButton(
+                elevation: 6.0,
+                child: Text("Book"),
+                color: Colors.blueGrey,
+                onPressed: () => {bookFlight(context)},
+                padding: EdgeInsets.all(30),
+                textColor: Colors.red,
               )
             ],
           ),
@@ -41,6 +33,19 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+}
+
+bookFlight(BuildContext context) {
+  var alertDialog = AlertDialog(
+    title: Text("Successfully"),
+    content: Text("good day"),
+  );
+  showDialog(
+    context: context,
+    builder: (BuildContext context){
+      return alertDialog;
+    }
+  );
 }
 
 class Raised extends StatelessWidget {
@@ -54,8 +59,8 @@ class Raised extends StatelessWidget {
         child: Text("Book"),
         color: Colors.red,
         elevation: 6.0,
-        onPressed: () {
-          //action
+        onPressed: () => {
+          //bookFlight(context)
         },
       ),
     );
